@@ -3,24 +3,24 @@ part of 'file_loader_bloc.dart';
 sealed class FileLoaderState {
 }
 
-class FileLoading extends FileLoaderState {
+class FileLoadingState extends FileLoaderState {
   final String id;
-  FileLoading(this.id);
+  FileLoadingState(this.id);
 }
 
-class FileLoaded extends FileLoaderState {
+class FileLoadedState extends FileLoaderState {
   final String payload, id;
 
-  FileLoaded(this.payload, this.id);
+  FileLoadedState(this.payload, this.id);
 }
 
-class FileDeleting extends FileLoaderState {
+class FileDeletingState extends FileLoaderState {
   final String id;
-  FileDeleting(this.id);
+  FileDeletingState(this.id);
 }
 
-class FileDeleted extends FileLoaderState {
+class FileDeletedState extends FileLoaderState {
   final String payload, id;
 
-  FileDeleted(this.payload, this.id);
+  FileDeletedState(this.payload, this.id);
 }

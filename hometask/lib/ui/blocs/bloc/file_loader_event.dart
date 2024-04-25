@@ -3,14 +3,14 @@ part of 'file_loader_bloc.dart';
 sealed class FileLoaderEvent {
 }
 
-class LoadFile extends FileLoaderEvent{
+class LoadFileEvent extends FileLoaderEvent{
   final String id;
 
-  LoadFile(this.id);
+  LoadFileEvent(this.id);
 }
 
-class DeleteFile extends FileLoaderEvent {
+class DeleteFileEvent extends FileLoaderEvent {
   final String id;
 
-  DeleteFile(this.id);
+  DeleteFileEvent(this.id);
 }
