@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hometask/ui/blocs/bloc/file_loader_bloc.dart';
+import 'package:hometask/ui/blocs/file_loader/file_loader_bloc.dart';
+import 'package:hometask/ui/listenable classes/theme/themeValue.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -15,6 +16,12 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TextButton(
+              onPressed: () {
+                ThemeValue.nextTheme();
+              },
+              child: const Text('Theme'),
+            ),
             BlocBuilder<FileLoaderBloc, FileLoaderState>(
               builder: (context, state) {
                 if (state is FileDeletedState) {
