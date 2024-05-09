@@ -1,0 +1,4 @@
+#Thu May 09 18:34:59 MSK 2024
+base.0=D\:\\FlutterMusic\\1111\\hometask\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
